@@ -7,28 +7,148 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
     <title>10.3.1</title>
 
     <style>
-      header > img, h1{
-        text-align: center;
+      body{
+        background-color: black;
       }
+      header{
+        width: 100%;
+        position: relative;
+      }
+      header > img{
+        width: 100%;
+        margin: 0%;
+        height: auto;
+      }
+      header > div > p{
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        font-family: 'Tapestry', cursive;
+        color: rgb(254, 254, 250);
+        font-weight: bold;
+        text-shadow: 2px 3px rgb(11 11 11);
+      }
+      @media (min-width: 1100px) {
+        header > div > p{
+          font-size: 3vw;
+        }
+      }
+      @media (min-width: 650px) {
+        header > div > p{
+          font-size: 3vw;
+        }
+      }
+      @media (min-width: 500px) {
+        header > div > p{
+          font-size: 3vw;
+        }
+      }      
+      .container-sm{
+        position: absolute;
+        border: 5px solid rgb(42, 198, 14);
+        width: 75%;
+        max-height: 200px;
+        bottom: 6%;
+      }
+      .container-md{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        border: 5px solid red;
+      }
+      .container-md > h1{
+        font-family: 'Tapestry', cursive;
+        color: rgb(228, 161, 59);
+        font-size: 4vw;
+        text-align: center;
+        color: rgb(254, 254, 250);
+        text-shadow: 2px 3px rgb(11 11 11);
+      }
+      .poem{
+        min-width: 450px;
+        margin-left: 100px;
+        color: white;
+        border: 5px solid red;
+      }
+      main{
+        flex-wrap: wrap;
+      }
+      main > p{
+        float: left;
+        display: inline;
+        color: aliceblue;
+        margin-left: 11%;
+        margin-top: 3%;
+      }
+      .bezpic{
+        min-width: 500px;
+      }
+      @media (min-width: 1000px) {
+        .bezpic{
+          align-items: center;
+        }
+      }
+
+
 
     </style>
     
   </head>
-  <body class="m-0 flex border border-white">
-    <header class="container-xl border border-white">
-      <h1>Môj oblúbený šport</h1>
-      <!-- <div class="container border border-white"> -->
-        <img class="img-fluid mx-auto d-block" src="https://nh-uploads-prd.s3-eu-west-1.amazonaws.com/articles/shutterstock_1129471388.jpg" alt="bežec">
-      <!-- </div> -->
+  <body class="m-0 border border-white">
+    <header class="container-xl border border-white mb-5">
+        <div class="container-md">
+          <h1>Môj oblúbený šport</h1>
+        </div>
+      
+        <div class="container-sm">
+          <p>Najdôležitejšia vec v živote nie je triumf, ale úsilie. Nevyhnutná vec v&nbsp;živote nie je poraziť, ale dobre bojovať.
+
+            -Pierre de Coubertin</p>
+        </div>        
+        <img class="img-fluid d-block" src="https://nh-uploads-prd.s3-eu-west-1.amazonaws.com/articles/shutterstock_1129471388.jpg" alt="bežec">      
     </header>
-    <div class="container-xl border border-white">
+    <main class="d-flex container-xl border border-white">
+        <div class="bezpic">
+          <img class="img-fluid" src="https://trailrunplanet.com/wp-content/uploads/2019/02/12a.jpg" alt="trailrun_bežkyňa">
+        </div>
         
-        <img class="img-fluid" src="https://trailrunplanet.com/wp-content/uploads/2019/02/12a.jpg" alt="trailrun_bežkyňa">
-        <img class="img-fluid" src="https://images.contentstack.io/v3/assets/blt45c082eaf9747747/blt333952f465a48229/5de0ba9c940c02641378013d/_RUE2652_cut.jpg?width=1200&height=630&fit=crop" alt="trailrun_bežci">
-    </div>
+        <div class="poem">
+          <p>
+            ak budeš bežať dosť dlho <br>
+            a budeš bežať správne <br>
+            a dáš si naozaj záležať<br>
+            staneš sa len malou bodkou na reliéfe máp<br>
+            trasujúcou nové trasy<br>
+            v plynulom pohybe z doliny do doliny<br>
+            z vrcholku na vrchol<br>
+            
+            stratíš samého seba<br>
+            stratíš všetkých priateľov aj nepriateľov<br>
+            stratíš otca, sestru i matku<br>
+            stratíš vzdelanie<br>
+            stratíš prácu<br>
+            stratíš byt<br>
+            stratíš minulosť, všetky bývalé lásky<br>
+            stratíš budúcnosť, prísľub mäkkých pier krásnej ženy<br>
+            stratíš účes a biele zuby<br>
+            stratíš ramená a ruky a predlaktia plné žíl a mozoľnaté dlane<br>
+            stratíš trup a všetky rebrá v ňom<br>
+            stratíš nohy, tie ktoré ťa nesú kopcami<br>
+            stratíš všetko, čo si bol, si, budeš a mohol byť<br>
+            
+            a ostane len pohyb vpred</p>
+        </div>
+    <main>
+    
 
   </body>
 </html>
