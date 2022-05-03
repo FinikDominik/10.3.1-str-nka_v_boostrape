@@ -69,6 +69,42 @@
         margin-left: 100px;
         color: white;
         border: 5px solid red;
+        text-align: center;
+      }
+      @media (max-width: 1800px) {
+        .poem{
+          min-width: 100px;
+          margin-left: 0px;
+          text-align: center;
+          margin-top: 5%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 5%;
+          font-size: 15px;
+        }
+      }
+      @media (max-width: 1200px) {
+        .poem{
+          min-width: 100px;
+          margin-left: 0px;
+          text-align: center;
+          margin-top: 5%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 5%;
+          font-size: 20px;
+        }
+      }
+      @media (max-width: 764px) {
+        .poem{
+          min-width: 100px;
+          margin-left: 0px;
+          text-align: center;
+          margin-top: 5%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 5%;
+        }
       }
       main{
         flex-wrap: wrap;
@@ -84,7 +120,7 @@
       .bezpic{
         min-width: 500px;
       }
-      @media (max-width: 1159px) {
+      @media (max-width: 1200px) {
         .bezpic{
           width: 100%;
           min-width: 300px;
@@ -92,12 +128,27 @@
           height: auto;
           border: 3px solid yellow;
         }
-        .bezpic > img{
+        /* .bezpic > img{
           display: block;
           margin-left: auto;
           margin-right: auto;
           width: 50%;
+        } */
+      }
+      @media (max-width: 1200px){
+        .bezpic > img{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%
         }
+      }
+      article{
+        color: white;
+        text-align: center;
+        margin-bottom: 4%;
+        margin-left: 10%;
+        margin-right: 10%;
       }
 
 
@@ -118,10 +169,26 @@
         </div>        
         <img class="img-fluid d-block" src="https://nh-uploads-prd.s3-eu-west-1.amazonaws.com/articles/shutterstock_1129471388.jpg" alt="bežec">      
     </header>
-    <main class="d-flex container-xl border border-white">
-        <div class="bezpic">
-          <img class="img-fluid" src="https://trailrunplanet.com/wp-content/uploads/2019/02/12a.jpg" alt="trailrun_bežkyňa">
-        </div>
+    <article>
+      <h1>Trail running: What does it really mean?</h1>
+      <p>
+        Definition trail running – dirt not roads <br>
+        "Ultrarunning" – Running 42k and beyond <br>
+        Definition trail running – dirt not roads <br>
+        Trail running is a popular activity for the summer season. Contrary to popular belief and widespread notions, you don’t have to have mountains for trail running. Trail running can in fact be done everywhere. It is considered a “trail run” when you are not on surfaced, paved, sealed or asphalt roads. For trail running, it’s all about the movement outdoors in nature in fresh air. </p>
+    </article>
+
+    <div style="border: 3px solid red;" class="container">
+      <div class="ratio ratio-16x9 border: 3px solid red">
+        <iframe
+          src="https://www.youtube.com/embed/MRzeLDkWT1c?start=42&autoplay=1&loop=1&mute=1"
+          title="YouTube video"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+    <main class="d-flex container-xl border border-white mt-5">
+        
         
         <div class="poem">
           <p>
@@ -132,7 +199,6 @@
             trasujúcou nové trasy<br>
             v plynulom pohybe z doliny do doliny<br>
             z vrcholku na vrchol<br>
-            
             stratíš samého seba<br>
             stratíš všetkých priateľov aj nepriateľov<br>
             stratíš otca, sestru i matku<br>
@@ -149,8 +215,9 @@
             
             a ostane len pohyb vpred</p>
         </div>
+        <div class="bezpic">
+          <img class="img-fluid" src="https://trailrunplanet.com/wp-content/uploads/2019/02/12a.jpg" alt="trailrun_bežkyňa">
+        </div>
     <main>
-    
-
   </body>
 </html>
